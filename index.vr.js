@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AppRegistry,
   asset,
+  Sphere,
   StyleSheet,
   Pano,
   Text,
@@ -51,8 +52,15 @@ export default class WelcomeToReactVR extends React.Component {
         <Text style={{fontSize: 0.2, textAlign: 'center'}}>Blue</Text>
       </View>
 
+      <Sphere
+        radius={0.5}
+        widthSegments={20}
+        heightSegments={12}
+        style={{color: 'goldenrod', transform: [{translate: [-5, 1, -5]}]}}
+      />
+
     </View>
-    </View>
+  </View>
   );
 }
 };
